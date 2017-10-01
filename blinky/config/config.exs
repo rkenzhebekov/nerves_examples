@@ -9,8 +9,9 @@ use Mix.Config
 # to add files to the root filesystem or modify the firmware
 # archive.
 
-# config :nerves, :firmware,
-#   rootfs_additions: "config/rootfs_additions",
+config :nerves, :firmware,
+  #rootfs_additions: "config/rootfs_overlay"
+  rootfs_overlay: "rootfs_overlay"
 #   fwup_conf: "config/fwup.conf"
 
 config :logger, level: :debug
