@@ -9,14 +9,14 @@ use Mix.Config
 # to add files to the root filesystem or modify the firmware
 # archive.
 
-# config :nerves, :firmware,
-#   rootfs_additions: "config/rootfs_additions",
+config :nerves, :firmware,
+  rootfs_overlay: "rootfs_overlay"
 #   fwup_conf: "config/fwup.conf"
 
 config :logger, level: :debug
 
 config :hello_gpio, input_pin: 20
-config :hello_gpio, output_pin: 26
+config :hello_gpio, output_pin: 17
 
 config :bootloader,
   init: [:nerves_runtime],

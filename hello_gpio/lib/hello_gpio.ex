@@ -22,11 +22,11 @@ defmodule HelloGpio do
   defp toggle_pin_forever(output_pid) do
     Logger.debug "Turning pin #{@output_pin} ON"
     GPIO.write(output_pid, 1)
-    Process.sleep(500)
+    Process.sleep(5000)
 
     Logger.debug "Turning pin #{@output_pin} OFF"
     GPIO.write(output_pid, 0)
-    Process.sleep(500)
+    Process.sleep(5000)
 
     toggle_pin_forever(output_pid)
   end
