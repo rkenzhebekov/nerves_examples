@@ -17,6 +17,7 @@ config :logger, level: :debug
 
 config :hello_gpio, input_pin: 20
 config :hello_gpio, output_pin: 17
+config :hello_gpio, output_pins: [17, 27, 22, 5, 6, 13, 19]
 
 config :bootloader,
   init: [:nerves_runtime],
